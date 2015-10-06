@@ -9,7 +9,15 @@
 #include <stdio.h>
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
-    return 0;
+    for(int a = 1; a < 100; a++) {
+        if (a % 3 == 0 && a % 5 == 0) {
+            printf("FizzBuzz \n");
+        } else if ( a % 3 ==0) {
+            printf("Fizz \n");
+        } else if (a % 5 == 0) {
+            printf("Buzz \n");
+        } else {
+            printf("%d \n", a);
+        }
+    }
 }
